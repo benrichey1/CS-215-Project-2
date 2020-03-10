@@ -1,6 +1,0 @@
-echo "# CS-215-Project-2" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/benrichey1/CS-215-Project-2.git
-git push -u origin master
