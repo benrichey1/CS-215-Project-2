@@ -1,0 +1,18 @@
+string printLogoMenu() {
+
+
+string userChoice;
+
+    cout << "+**************************************+" << endl;
+		cout << "+       GRADE-AID CLASS MANAGEMENT     +" << endl;
+		cout << "+             by Ben Richey            +" << endl;
+		cout << "+**************************************+" << endl;
+		cout << "A - Add Student        D - Drop Student" << endl;
+		cout << "U - Update Student     V - View Student" << endl;
+		cout << "E - Enter class scores P - Print Class" << endl;
+		cout << "S - Sort class by avg  X - Exit" << endl;
+		cout << "Enter option: ";
+    cin >> userChoice
+    
+    return userChoice;
+    }
