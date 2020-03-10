@@ -1,6 +1,7 @@
 string printLogoMenu() {
 
-
+//prints logo and menu
+//returns users choice as string
 string userChoice;
 
     cout << "+**************************************+" << endl;
