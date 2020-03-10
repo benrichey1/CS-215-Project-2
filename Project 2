@@ -4,3 +4,98 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/benrichey1/CS-215-Project-2.git
 git push -u origin master
+
+
+// Start of Actual Program
+ /*  string printLogo() {
+
+	string userChoice;
+
+	cout << "+**************************************+" << endl;
+	cout << "+       GRADE-AID CLASS MANAGEMENT     +" << endl;
+	cout << "+             by Ben Richey            +" << endl;
+	cout << "+**************************************+" << endl;
+	cout << "A - Add Student        D - Drop Student" << endl;
+	cout << "U - Update Student     V - View Student" << endl;
+	cout << "E - Enter class scores P - Print Class" << endl;
+	cout << "S - Sort class by avg  X - Exit" << endl;
+	cout << "Enter option: ";
+	cin >> userChoice;
+
+	return userChoice;
+}    */
+
+int main() {
+
+	char userChoice;
+	int studentID;
+	string firstName;
+	string lastName;
+	int numScores;
+
+	do {
+
+		cout << "+**************************************+" << endl;
+		cout << "+       GRADE-AID CLASS MANAGEMENT     +" << endl;
+		cout << "+             by Ben Richey            +" << endl;
+		cout << "+**************************************+" << endl;
+		cout << "A - Add Student        D - Drop Student" << endl;
+		cout << "U - Update Student     V - View Student" << endl;
+		cout << "E - Enter class scores P - Print Class" << endl;
+		cout << "S - Sort class by avg  X - Exit" << endl;
+		cout << "Enter option: ";
+		cin >> userChoice;
+
+	switch (userChoice) {
+
+	case 'X': case 'x': 
+		cout << "Class data written to file" << endl;
+		system("pause");
+		break;
+
+	case 'A': case 'a':
+		// cout << "This function is still in development. Sorry for any inconvenience." << endl;
+		cout << "Enter student ID number: ";
+		cin >> studentID;
+		cout << "Enter first and last name: ";
+		cin >> firstName >> lastName;
+		cout << "Enter number of scores: ";
+		cin >> numScores;
+
+		break;
+
+	case 'D': case 'd':
+		cout << "This function is still in development. Sorry for any inconvenience." << endl;
+		break;
+
+	case 'U': case 'u':
+		cout << "This function is still in development. Sorry for any inconvenience." << endl;
+		break;
+
+	case 'V': case 'v':
+		cout << "This function is still in development. Sorry for any inconvenience." << endl;
+		break;
+
+	case 'E': case 'e':
+		cout << "This function is still in development. Sorry for any inconvenience." << endl;
+		break;
+
+	case 'P': case 'p':
+		cout << "This function is still in development. Sorry for any inconvenience." << endl;
+		break;
+
+	case 'S': case 's':
+		cout << "This function is still in development. Sorry for any inconvenience." << endl;
+		break;
+
+	default: cout << "Invalid option. Choose one of A, D, U, V, E, P, S, X" << endl;
+	}
+
+	} while (userChoice != 'x' && userChoice != 'X'); {
+		cout << "Thanks for using GRADE-AID CLASS MANAGEMENT!" << endl;
+		system("pause");
+		return 0;
+	}	
+
+	
+}
